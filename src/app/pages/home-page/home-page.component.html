@@ -1,0 +1,38 @@
+<section class="home-page">
+  <div class="container">
+    <div class="content">
+      <div class="currencies-form">
+        <div class="currency-from">
+          <select
+            name=""
+            [ngModel]="selectedFromCurrency"
+            (ngModelChange)="onChangeFromCurrency($event)"
+          >
+            <option
+              *ngFor="let currency of currencies"
+              value="{{ currency.name }}"
+            >
+              {{ currency.name }}
+            </option>
+          </select>
+          <input type="text" [(ngModel)]="currencyFromAmount" />
+        </div>
+        <div class="currency-to">
+          <select
+            name=""
+            [ngModel]="selectedToCurrency"
+            (ngModelChange)="onChangeToCurrency($event)"
+          >
+            <option
+              *ngFor="let currency of currencies"
+              value="{{ currency.name }}"
+            >
+              {{ currency.name }}
+            </option>
+          </select>
+          <input type="text" [(ngModel)]="currencyToAmount" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

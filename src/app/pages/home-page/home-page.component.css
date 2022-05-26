@@ -1,0 +1,29 @@
+.home-page {
+  height: calc(100vh - 100px);
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currencies-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.currency-from, .currency-to {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 45%;
+}
+
+input, select{
+  margin: 5px;
+  height: 40px;
+}

@@ -1,0 +1,38 @@
+header {
+  background: #a5d6d4;
+  height: 100px;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 80px;
+}
+
+.currencies {
+  display: flex;
+  align-items: center;
+}
+
+.currency {
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.currency h5 {
+  margin-bottom: 4px;
+  font: 700 18px 'Roboto', sans-serif;
+  letter-spacing: 1px;
+}
+
+.currency h6 {
+  font: 400 16px 'Roboto', sans-serif;
+}
